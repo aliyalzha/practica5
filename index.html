@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="loader">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<script>
+	"use strict"
+
+	let btn = Document.querySelector('button');
+	let msg = Document.querySelector('.message')
+	btn.addEventListener("click", function(event){
+		msg.style.display = "block";
+		msg.classList.add("animate__animated", "animate__fadeInLeftBig");
+	});
+</script>
+
+</body>
+</html>
